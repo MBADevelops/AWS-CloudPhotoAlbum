@@ -3,28 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Ensuring proper character encoding for the web page. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Making the website responsive to various device widths. -->
     <title>AWS Photo Album</title>
+    <!-- Setting a meaningful title for the page. -->
     <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Adding a favicon for better brand visibility in browser tabs. -->
+    
     <!-- Bootstrap CSS -->
+    <!-- I chose Bootstrap for its ease of use and vast components, which help in making the site look modern and responsive. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body class="bg-light">
+    <!-- Setting a light background color to keep the design clean and simple. -->
 
     <div class="container mt-5">
+        <!-- Using a container to center and limit the width of content. Added margin-top for spacing. -->
         <div class="text-center">
+            <!-- Centering the title and intro text. -->
             <h1 class="display-4">Clyde's AWS Serverless Photo Album</h1>
+            <!-- Displaying a prominent title for the photo album. -->
             <p class="lead">Click below to view the photo collection.</p>
+            <!-- A brief instruction for users. -->
             <button onclick="fetchPhotos()" class="btn btn-primary mb-4">Show Photos</button>
+            <!-- A button that, when clicked, will trigger the fetchPhotos function to load images. -->
         </div>
         <ul id="photoList" class="list-unstyled"></ul>
+        <!-- An empty list that will be populated with photos dynamically from the script. -->
     </div>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- Including necessary scripts for Bootstrap's JS components and for making the AJAX call. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Linking the custom script that contains logic for fetching and displaying photos. -->
     <script src="script.js"></script>
 </body>
 
